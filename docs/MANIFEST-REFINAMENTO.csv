@@ -1,0 +1,7 @@
+﻿original,destination,note,width,height,alpha,size_kb
+cenário_de_quintal_com_câmera_e_casinha_vermelha.png,public/assets/backgrounds/backyard-film-set-clean.webp,"Cenário alternativo: mantém câmera, caixa com megafone e casinha; não inclui cadeira nem claquete",1536,1024,no,279.4
+woodstock_caminhando_com_carta_de_amor.png,public/assets/characters/woodstock/woodstock-envelope-walking.webp,"Woodstock andando com envelope, para a entrada à direita na Cena 05",1242,1208,yes,124.8
+woodstock_entrega_carta_de_amor.png,public/assets/characters/woodstock/woodstock-envelope-presenting.webp,"Woodstock com envelope, para a pausa junto ao Snoopy",1211,1247,yes,114.5
+envelope_com_selo_de_coração.png,public/assets/props/envelope-closed-clean.webp,Envelope independente fechado; opcional como referência/estado inicial,888,1176,yes,39.1
+envelope_aberto_com_carta.png,public/assets/props/envelope-open-reference.webp,Referência visual opcional de envelope com carta; NÃO animar trocando imagens abruptamente,1254,1229,yes,68.8
+pulseira_da_amizade_com_charms_dourados.png,public/assets/props/friendship-bracelet-oi-swift.webp,"Pulseira com OI, cores de eras, pingentes de estrela/coração; exibir só na Cena 06",1254,1249,yes,145.0

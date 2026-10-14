@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300">
+ <path d="M77 101l141 174M215 100L72 275" stroke="#79533f" stroke-width="16" stroke-linecap="round"/>
+ <path d="M73 91h150v42H73z" fill="#fff6df" stroke="#33302d" stroke-width="7"/>
+ <path d="M66 17h164v94H66z" fill="#d9554e" stroke="#33302d" stroke-width="8" rx="8"/>
+ <path d="M66 117L44 157m183-41 22 41" stroke="#79533f" stroke-width="15" stroke-linecap="round"/>
+ <text x="148" y="69" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="bold" fill="#fff9ed">DIRETOR</text>
+</svg>

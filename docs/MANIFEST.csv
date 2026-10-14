@@ -1,0 +1,7 @@
+path,purpose,priority
+public/assets/characters/snoopy/snoopy-sign-blank.webp,Placa vazia com texto HTML,principal
+public/assets/characters/snoopy/snoopy-sign-hello.webp,Placa com lettering baked,alternativa
+public/assets/characters/woodstock/woodstock-envelope-delivery.webp,Woodstock entrega envelope,principal
+public/assets/characters/snoopy/snoopy-envelope-receiving.webp,Snoopy recebe envelope,opcional
+public/assets/characters/snoopy/snoopy-envelope-offering.webp,Snoopy oferece envelope,principal
+public/assets/props/envelope-closed-heart.webp,Envelope clicável,principal

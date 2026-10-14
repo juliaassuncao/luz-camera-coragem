@@ -1,0 +1,80 @@
+:root {
+  --cream: #fff4df;
+  --sky: #b9dcef;
+  --grass: #b9d39a;
+  --red: #d9554e;
+  --yellow: #f1cc64;
+  --ink: #33302d;
+  --radius-lg: 25px;
+  --font-title: "Trebuchet MS", "Arial Rounded MT Bold", sans-serif;
+  // Comic Sans MS is a system font on Windows. Android normally does not ship it;
+  // keep the approved face first and use stable sans-serif fallbacks instead of
+  // the platform-dependent generic cursive family.
+  --font-dialogue: "Comic Sans MS", "Comic Sans", "Trebuchet MS", Arial, sans-serif;
+  --font-ui: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--font-ui);
+  color: var(--ink);
+  background: var(--cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+}
+button,
+select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 3px solid #1a6586;
+  outline-offset: 4px;
+}
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 52px;
+  padding: 0.75rem 1.55rem;
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  background: var(--red);
+  box-shadow: 4px 5px 0 var(--ink);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  transition:
+    transform 0.14s ease,
+    box-shadow 0.14s ease;
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 3px 0 var(--ink);
+  }
+  &:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 var(--ink);
+  }
+  &--secondary {
+    color: var(--ink);
+    background: #fff;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

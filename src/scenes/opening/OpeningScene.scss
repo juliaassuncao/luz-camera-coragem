@@ -1,0 +1,129 @@
+@use '../../styles/scene-layout' as scene;
+
+.opening {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: clamp(1.2rem, 3vw, 2.3rem) clamp(.75rem, 2vw, 1.5rem) 1.5rem;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__heading {
+    margin: 0 auto 1.5rem;
+    text-align: center;
+    h1 {
+      max-width: 100%;
+      margin: .4rem 0 0;
+      font-family: var(--font-title);
+      font-size: clamp(2.2rem, 5.6vw, 4.6rem);
+      line-height: 1.08;
+      letter-spacing: -.045em;
+    }
+  }
+  &__eyebrow {
+    font-family: var(--font-dialogue);
+    font-size: clamp(.95rem, 2vw, 1.15rem);
+    color: #a63f38;
+  }
+  &__stage {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    flex-shrink: 0;
+    aspect-ratio: 1672 / 941;
+    border: 3px solid var(--ink);
+    border-radius: 7px 11px 9px 6px;
+    background: #7ec9e3;
+    box-shadow: 0 7px 0 #e8d8be;
+    isolation: isolate;
+  }
+  &__stage img { position: absolute; display: block; user-select: none; pointer-events: none; }
+  &__backdrop { z-index: 0; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  &__snoopy {
+    position: absolute;
+    z-index: 1;
+    width: 31%;
+    aspect-ratio: 1084 / 1402;
+    left: 27%;
+    bottom: 6%;
+  }
+  &__pose { bottom: 0; height: auto; transform-origin: 50% 95%; }
+  &__pose--standing { width: 87%; left: 10%; opacity: 0; visibility: hidden; }
+  &__pose--seated { width: 100%; left: 0; }
+  &__woodstock { z-index: 2; width: 13%; left: 58%; bottom: 3.5%; }
+  &__dialogue { position: absolute; z-index: 3; top: 7%; right: 3%; width: 39%; transform-origin: 10% 100%; }
+  &__dialogue .comic-bubble { max-width: none; padding: 1.5rem 1.8rem; font-size: clamp(1rem, 1.8vw, 1.3rem); line-height: 1.4; text-align: center; }
+  &__dialogue-line { display: block; margin-top: .65rem; }
+  &__footer { margin-top: 1.8rem; display: flex; flex-direction: column; align-items: center; gap: .55rem; }
+  & &__accept { min-height: 54px; background: #b8443e; }
+  &__accept:disabled { cursor: default; }
+  &__skip {
+    min-height: 44px;
+    padding: .5rem .8rem;
+    border: 0;
+    background: transparent;
+    color: #66594a;
+    font-size: .82rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    &:hover { color: var(--ink); }
+    &:disabled { visibility: hidden; }
+  }
+}
+
+@media (min-width: 701px) {
+
+
+.opening {
+    // Reserve room for the heading, both controls and their focus outlines.
+    width: min(100%, 1120px, calc((100svh - 16rem) * 1.777 + 3rem));
+    padding-top: clamp(.75rem, 2svh, 2.3rem);
+    padding-bottom: .75rem;
+    &__heading { margin-bottom: clamp(.8rem, 2svh, 1.5rem); }
+    &__heading h1 { font-size: clamp(2.2rem, min(5.6vw, 7.4svh), 4.6rem); }
+    &__footer { margin-top: clamp(1rem, 2svh, 1.8rem); }
+  }
+}
+
+@include scene.dialogues('.opening');
+.opening[data-loading='true'] .opening__snoopy,
+.opening[data-loading='true'] .opening__woodstock { visibility: hidden; }
+
+@media (min-width: 701px) and (max-width: 950px) {
+  .opening {
+    &__dialogue { top: 5%; right: 3%; width: 43%; }
+    &__dialogue .comic-bubble { padding: 1rem 1.25rem; font-size: 1rem; }
+    &__snoopy { width: 30%; left: 24%; }
+    &__woodstock { left: 56%; }
+  }
+}
+
+@media (min-width: 701px) and (max-height: 760px) {
+  .opening__dialogue .comic-bubble { padding: 1rem 1.25rem; font-size: 1rem; }
+}
+
+@media (max-width: 700px) {
+  .opening {
+    padding-top: 1.3rem;
+    &__heading { margin-bottom: 1.2rem; }
+    &__heading h1 { max-width: 12ch; margin: .4rem auto 0; font-size: clamp(2.15rem, 8.5vw, 3.6rem); }
+    &__stage { aspect-ratio: 3 / 4; min-height: 465px; max-height: 670px; }
+    // Reframe the original landscape around the doghouse; never stretch the art.
+    &__backdrop { object-fit: cover; object-position: right bottom; }
+    &__snoopy { width: min(59%, 300px); left: 15%; bottom: 4%; }
+    &__woodstock { width: 26%; left: 71%; bottom: 1%; }
+    &__dialogue { left: 3%; right: 3%; top: 4%; width: auto; }
+    &__dialogue .comic-bubble { padding: .8rem 1rem; font-size: clamp(1rem, 4vw, 1.08rem); }
+    &__dialogue-line { margin-top: .55rem; }
+    &__dialogue .comic-bubble::before { width: 18px; height: 14px; border-width: 2.5px; left: 53%; bottom: -20px; }
+    &__dialogue .comic-bubble::after { width: 10px; height: 8px; border-width: 2.5px; left: 48%; bottom: -34px; }
+    &__footer { margin-top: 1.45rem; }
+  }
+}
+
+@media (max-width: 370px) {
+  .opening__stage { min-height: 455px; }
+}
+
+@include scene.stage-frame('.opening');

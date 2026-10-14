@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460">
+ <title>Ilustração provisória: beagle cineasta (não é uma imagem oficial dos Peanuts)</title>
+ <ellipse cx="212" cy="434" rx="116" ry="15" fill="#719c70" opacity=".3"/>
+ <path d="M211 253c-84 0-107 54-98 105 10 64 59 75 124 69 60-5 84-48 79-93-6-51-29-81-105-81z" fill="#fffcf1" stroke="#33302d" stroke-width="10"/>
+ <path d="M276 287c35 41 43 92 70 77" fill="none" stroke="#33302d" stroke-width="12" stroke-linecap="round"/>
+ <path d="M275 287c35 41 43 92 70 77" fill="none" stroke="#fffcf1" stroke-width="7" stroke-linecap="round"/>
+ <path d="M141 390l-34 30m138-18 44 17" stroke="#33302d" stroke-width="11" stroke-linecap="round"/>
+ <path d="M185 283c-33 2-62 11-80 43" stroke="#33302d" stroke-width="11" stroke-linecap="round"/>
+ <path d="M196 149C153 118 97 135 76 179c-14 29 3 61 32 79 35 22 107 12 152-7 30-13 69-30 67-62-3-47-84-55-131-40z" fill="#fffcf1" stroke="#33302d" stroke-width="10"/>
+ <path d="M110 190c-25-16-43 5-35 44l14 65c8 28 31 26 43 3l21-55" fill="#33302d" stroke="#33302d" stroke-width="6"/>
+ <ellipse cx="318" cy="212" rx="25" ry="18" fill="#33302d"/>
+ <path d="M296 240q-23 16-44 4" stroke="#33302d" stroke-width="7" fill="none" stroke-linecap="round"/>
+ <ellipse cx="234" cy="193" rx="9" ry="12" fill="#33302d"/>
+ <path d="M210 120l-11-39 71-30 42 45-20 30" fill="#343331" stroke="#33302d" stroke-width="6"/>
+ <path d="M163 119c49-33 99-26 159-6" fill="none" stroke="#343331" stroke-width="27" stroke-linecap="round"/>
+ <path d="M208 214h87" stroke="#33302d" stroke-width="11" stroke-linecap="round"/>
+ <rect x="198" y="198" width="44" height="30" rx="8" fill="#33302d"/><rect x="254" y="198" width="44" height="30" rx="8" fill="#33302d"/>
+ <path d="M176 281c29 18 78 18 108 3" stroke="#d9554e" stroke-width="12" stroke-linecap="round" fill="none"/>
+ <path d="M286 310l36-23" stroke="#33302d" stroke-width="11" stroke-linecap="round"/>
+ <path d="M315 283l40 12-10 48-42-8z" fill="#f1cc64" stroke="#33302d" stroke-width="7"/>
+</svg>

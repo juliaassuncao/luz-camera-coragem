@@ -1,0 +1,54 @@
+.comic-bubble {
+  position: relative;
+  max-width: 27rem;
+  padding: 1.2rem 1.5rem;
+  border: 3px solid var(--ink);
+  border-radius: 1.8rem;
+  background: #fffefa;
+  box-shadow: 5px 6px 0 rgb(51 48 45 / 10%);
+  color: var(--ink);
+  font-family: var(--font-dialogue);
+  font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+  line-height: 1.25;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 15%;
+    width: 19px;
+    height: 19px;
+    background: #fffefa;
+    border-right: 3px solid var(--ink);
+    border-bottom: 3px solid var(--ink);
+    transform: rotate(45deg);
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: .35rem;
+    font: 800 .68rem/1.2 var(--font-ui);
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    color: #78695b;
+  }
+
+  p { margin: 0; }
+
+  &--thought {
+    border-radius: 45% 42% 40% 44% / 30% 36% 32% 38%;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      background: #fffefa;
+      border: 3px solid var(--ink);
+      border-radius: 50%;
+      transform: none;
+    }
+
+    &::before { width: 22px; height: 17px; left: 8%; bottom: -24px; }
+    &::after { width: 12px; height: 10px; left: 2%; bottom: -41px; }
+  }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300">
+ <title>Ilustração provisória: assistente passarinho amarelo (não é imagem oficial dos Peanuts)</title>
+ <ellipse cx="122" cy="278" rx="74" ry="10" fill="#729770" opacity=".25"/>
+ <path d="M91 54l-13-26 32 13L112 15l30 30 9-24 11 34" stroke="#33302d" stroke-width="7" stroke-linejoin="round" fill="#f1cc64"/>
+ <ellipse cx="129" cy="109" rx="64" ry="66" fill="#f1cc64" stroke="#33302d" stroke-width="9"/>
+ <path d="M87 169c-25 22-29 63 10 81 33 15 79 1 83-34 4-25-5-42-20-47" fill="#f1cc64" stroke="#33302d" stroke-width="9"/>
+ <path d="M60 117l-37 9 37 17" fill="#f09e57" stroke="#33302d" stroke-width="7" stroke-linejoin="round"/>
+ <circle cx="104" cy="106" r="6" fill="#33302d"/><circle cx="145" cy="106" r="6" fill="#33302d"/>
+ <path d="M100 242v34m48-34v34m-48-3-17 7m17-7 17 7m31-7-16 7m16-7 16 7" stroke="#33302d" stroke-width="6" stroke-linecap="round"/>
+ <path d="M60 166l-26-20m144 20 27-13" stroke="#33302d" stroke-width="8" stroke-linecap="round"/>
+ <path d="M17 147h66v48H17z" fill="#fcfbef" stroke="#33302d" stroke-width="5"/>
+ <path d="M17 129h66v21H17z" fill="#33302d"/><path d="M28 129l16 21m14-21 16 21" stroke="#fff" stroke-width="7"/>
+</svg>

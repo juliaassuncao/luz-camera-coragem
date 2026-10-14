@@ -1,0 +1,33 @@
+@mixin dialogues($scene) {
+  #{$scene}__dialogue[data-speaker='snoopy'] { top: var(--thought-top, 12%); }
+  #{$scene}__dialogue[data-speaker='snoopy'] .comic-bubble::before { left: var(--thought-dot-big, 8%); }
+  #{$scene}__dialogue[data-speaker='snoopy'] .comic-bubble::after { left: var(--thought-dot-small, 2%); }
+  #{$scene}__dialogue[data-speaker='voice'] {
+    left: auto;
+    right: 3%;
+    top: 8%;
+    width: max-content;
+    max-width: 43%;
+  }
+  #{$scene}__voice { width: max-content; max-width: 100%; margin-left: auto; }
+  #{$scene}__heading { min-height: 76px; }
+  @media (max-width: 700px) {
+    #{$scene}__dialogue[data-speaker='voice'] { right: 4%; top: 5%; max-width: 92%; }
+    #{$scene}__heading { min-height: 68px; }
+  }
+}
+
+// The five backyard scenes share one frame size at each breakpoint. Individual
+// scenes may reframe their backdrop, but never change the outer stage geometry.
+@mixin stage-frame($scene) {
+  #{$scene} { width: min(100%, 1120px, calc((100svh - 17rem) * 1.8 + 3rem)); }
+  #{$scene}__heading { margin-bottom: 1rem; }
+  #{$scene}__stage { width: 100%; min-height: 0; max-height: none; aspect-ratio: 1.8; }
+  @media (min-width: 701px) and (orientation: portrait) {
+    #{$scene}__stage { aspect-ratio: 4 / 3; }
+  }
+  @media (max-width: 700px) {
+    #{$scene} { width: 100%; }
+    #{$scene}__stage { min-height: 620px; max-height: 670px; aspect-ratio: 3 / 5; }
+  }
+}
