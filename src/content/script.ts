@@ -79,7 +79,6 @@ export const SCRIPT = {
     woodstockAlt: 'Woodstock come pipoca tranquilamente ao lado do Snoopy',
     sheetAlt: 'Um lençol de cinema improvisado em uma moldura de madeira',
     projectorAlt: 'Projetor cinematográfico retrô sobre um caixote',
-    braceletAlt: 'Pulseirinha de amizade com as letras OI',
     replayDramaLabel: 'Pequena reprise de Drama de Oscar: Snoopy sob nuvens e chuva',
     replayActionLabel: 'Pequena reprise de Filme de Ação: Snoopy herói com uma explosão cartunesca',
   },
@@ -119,7 +118,7 @@ export const SCRIPT = {
     replay: 'Assistir novamente',
   },
   easterEgg: {
-    label: 'SNOOPY PICTURES · ARQUIVO SECRETO Nº 001',
+    label: 'ARQUIVO SECRETO Nº 001',
     title: 'Cena pós-créditos desbloqueada!',
     introduction: 'Após uma investigação rigorosa, a produção confirma:',
     message: 'A responsável por este filme tem um histórico preocupante de não identificar sarcasmo.',

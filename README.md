@@ -1,19 +1,29 @@
 # Luz, câmera... coragem! 🎬
 
-MVP inicial do **mini cinema interativo** criado como um gesto leve de aproximação. Snoopy dirige uma produção desnecessariamente grande só para ajudar alguém a dizer oi. Ambiente: quintal colorido, casinha vermelha e Woodstock como assistente.
+Microcurta interativo em seis cenas no qual Snoopy dirige uma produção cinematográfica de orçamento duvidoso. A experiência termina em uma carta e em uma cena pós-créditos secreta acionada pela pulseirinha “OI”.
 
-## Começar
+## Tecnologias
 
-Requisitos: Node **22** e npm. No VS Code, abra a pasta do projeto e execute:
+- React 19 e TypeScript
+- Vite
+- SCSS
+- GSAP e `@gsap/react`
+
+## Requisitos
+
+- Node.js 22, conforme `.nvmrc`
+- npm
+
+## Desenvolvimento
 
 ```bash
 npm install
 npm run dev
 ```
 
-O Vite informa a URL local (normalmente http://localhost:5173). Para acessar o seletor de cenas em **desenvolvimento**, acrescente `?debug=1` à URL.
+O Vite informa a URL local, normalmente `http://localhost:5173`. Em desenvolvimento, `?debug=1` habilita o seletor interno de cenas.
 
-Outros comandos:
+## Validação e build
 
 ```bash
 npm run typecheck
@@ -21,53 +31,37 @@ npm run build
 npm run preview
 ```
 
-## O que o ZIP entrega HOJE
+O build é gerado em `dist/`. A experiência respeita `prefers-reduced-motion` e não inicia áudio automaticamente.
 
-✅ Vite + React + TypeScript + SCSS + GSAP (`@gsap/react`), scripts e configurações.
-
-✅ Estrutura de **seis cenas** mapeadas por IDs; gerenciamento de cena e estado reservado para `drama`/`action`.
-
-✅ **Tela 01 / Abertura** ilustrada como rascunho, responsiva, com título, cenário em camadas, balão, animação de entrada e botão funcionando.
-
-✅ Balão reutilizável `ComicBubble`, variáveis de estilo, ilustrações SVG provisórias, textos centralizados.
-
-✅ Inventário de assets, direitos de uso e documento de decisões criativas para futuros prompts do Codex.
-
-🚧 **Telas 02–06**: componentes-placeholder **de propósito**. O botão inicial leva para uma tela temporária `Cena em preparação`, até continuarmos com o Codex. Não há ainda filmagem, envelope interativo ou carta montada.
-
-## Estrutura resumida
+## Estrutura
 
 ```text
-src/
-  app/           App, estado e lista das seis cenas
-  components/    ComicBubble e placeholder de cena
-  config/        caminhos de assets
-  content/       falas, botões, carta
-  scenes/opening/ abertura funcional
-  styles/        tokens, regras globais
-public/assets/
-  backgrounds/   quintal
-  characters/    desenhos provisórios (NÃO oficiais)
-  props/         casinha, cadeira, câmera
-_local/references/  referência do projeto anterior, só local (gitignored)
-docs/           inventário, fontes/direitos, decisões, plano para Codex
+src/app/           fluxo entre as seis cenas
+src/animation/     carregamento de imagens e posicionamento dos balões
+src/components/    componentes compartilhados
+src/config/        referências centralizadas de assets
+src/content/       roteiro e textos da interface
+src/scenes/        implementação e estilos de cada cena
+src/styles/        estilos globais e layout compartilhado
+public/assets/     imagens, efeitos, objetos e áudio
+docs/              direitos, inventários, decisões e deploy
 ```
 
-## Imagens e licença
+## Áudio
 
-**Importante:** a abertura funciona com **desenhos SVG provisórios originais** — um beagle diretor e um passarinho amarelo; **não são ilustrações oficiais** do Snoopy/Woodstock. A pasta `_local/references/` guarda uma imagem do protótipo anterior para comparação, **não aparece no site e não vai para o build**. Os links das imagens encontradas estão em `docs/REFERENCIAS-E-DIREITOS.md`: não foi possível baixá-las automaticamente neste ambiente.
+O player secreto usa `public/assets/audio/better-when-im-dancin.mp3`. A reprodução depende de ação explícita da visitante.
 
-Antes de subir artes oficiais ou suas adaptações para um site público, aguarde a autorização de reutilização. O contato listado no FAQ da Peanuts é `info@peanuts.com`.
+## Deploy na Vercel
 
-## Personalização
+Configure:
 
-- Editar textos: `src/content/script.ts`
-- Trocar os desenhos: `src/config/assets.ts` e `public/assets/characters/`
-- Ajustar paleta: `src/styles/global.scss`
-- Ajustar cena inicial: `src/scenes/opening/OpeningScene.tsx` e `OpeningScene.scss`
-- Conferir o inventário: `docs/ASSETS-ABERTURA.md`
-- Planejar a continuação: `docs/CODEX-PROXIMOS-PASSOS.md`
+- Framework preset: **Vite**
+- Build command: `npm run build`
+- Output directory: `dist`
+- `VITE_SITE_URL`: domínio HTTPS definitivo, sem barra final
 
-## Escopo
+Os metadados também aceitam `VERCEL_PROJECT_PRODUCTION_URL` como fallback. As instruções completas estão em [`docs/DEPLOY-VERCEL.md`](docs/DEPLOY-VERCEL.md).
 
-A experiência não pede login, não envia dados e não contém integração de backend. Texto e fluxo serão refinados por etapas. Não há áudio automático.
+## Assets e direitos
+
+O inventário atual está em [`docs/ASSETS.md`](docs/ASSETS.md). Os registros de procedência, uso e autorização ficam em [`docs/REFERENCIAS-E-DIREITOS.md`](docs/REFERENCIAS-E-DIREITOS.md). Revise essas informações antes de qualquer publicação pública.

@@ -13,10 +13,9 @@
 - Contato de autorização Peanuts: **info@peanuts.com** (consulte FAQ acima).
 - Que o projeto seja privado, temporário e sem fins comerciais **não garante** autorização para publicar personagens/imagens protegidas.
 - As imagens externas NÃO foram incluídas no ZIP: o ambiente não conseguiu baixá-las.
-- O pacote inicial contém **desenhos provisórios originais** em SVG para prototipagem. Eles foram retirados da renderização da abertura.
+- Os desenhos SVG provisórios do protótipo foram retirados da renderização e removidos do projeto final.
 - A Tela 01 agora usa os WebP fornecidos em `luz-camera-coragem-assets-cena-01.zip`, descritos no pacote como ilustrações geradas para este projeto. Não são artes oficiais da Peanuts; o recebimento dos arquivos não comprova autorização dos personagens. Fontes e termos continuam pendentes de registro antes da publicação pretendida.
 - Guarde no repositório os termos da autorização e as fontes das artes antes do deploy.
-- A pasta `_local/` é ignorada pelo Git; o Vite não a inclui na build.
 
 ## Tabela para preencher após conseguir autorização
 

@@ -7,7 +7,7 @@
 - Usuária: somente uma voz fora de cena; não representá-la como desesperada nem retratar Marina como antipática.
 - Visitante: diretora convidada, convidada oficialmente por Snoopy; controla a claquete e escolhe um gênero.
 - Ambiente: quintal/estúdio improvisado dentro do universo Peanuts, casinha vermelha, quadrinhos clássicos **coloridos**, paleta suave, cinema retrô.
-- Taylor Swift: easter egg **visual e discreto**, pulseirinha de amizade com letras `OI` exclusivamente junto à carta da Cena 06; sem letra de música ou referência explícita.
+- Trilha secreta: easter egg **visual e discreto**, acionado pela pulseirinha de amizade com letras `OI` junto à carta da Cena 06; sem letra de música e sem reprodução automática.
 - Pouca leitura; humor visual e falas curtas. Não usar linguagem técnica de programação na experiência pública.
 
 ## Fluxo das seis telas
@@ -21,5 +21,5 @@
 ## Outros pontos guardados
 - Preferência de humor da destinatária: espontâneo, dramático, exagerado e afetuoso. Não copiar nem citar tweets dela.
 - Ela tem formação em cinema, trabalha com mídias sociais e gosta muito do Snoopy.
-- O P.S. institucional sobre a usuária não perceber sarcasmo foi aprovado para a carta e deve ficar separado da assinatura, em corpo menor.
+- O P.S. institucional aprovado deve ficar separado da assinatura, em corpo menor; a observação sobre sarcasmo pertence apenas ao comunicado secreto.
 - A mensagem final está em `src/content/script.ts` e poderá mudar depois.
