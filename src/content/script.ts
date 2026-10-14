@@ -138,5 +138,6 @@ export const SCRIPT = {
     unmuteLabel: 'Ativar som da trilha sonora',
     loadingLabel: 'Carregando trilha sonora…',
     errorMessage: 'A trilha sonora ainda não está disponível nesta produção.',
+    playbackErrorMessage: 'Não foi possível iniciar a trilha. Tente novamente.',
   },
 } as const;
